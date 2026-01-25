@@ -44,3 +44,6 @@ app-example
 
 #virtual environment
 .venv/
+
+#.env file
+.env
