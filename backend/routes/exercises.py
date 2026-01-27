@@ -34,7 +34,7 @@ def search_exercise():
     
     if response.status_code != 200:
         return jsonify({
-            "error": "Upstream API error",
+            "error": "error",
             "status": response.status_code
         }), 502
     
