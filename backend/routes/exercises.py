@@ -7,7 +7,7 @@ EXERCISE_API_URL = os.getenv("EXERCISE_API_URL")
 if not EXERCISE_API_URL:
     raise RuntimeError("EXERCISE_API_URL not properly set")
 
-exercise_bp = Blueprint("exercise", __name__)
+exercise_bp = Blueprint("exercise", __name__, url_prefix="/api/exercises")
 
 #get all exercises
 @exercise_bp.route("/", methods=["GET"])
