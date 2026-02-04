@@ -12,5 +12,5 @@ app.register_blueprint(exercise_bp, url_prefix="/api/exercises")
 def home():
     return "fuck"
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)
